@@ -1,0 +1,23 @@
+[project]
+name = "credit-score-mlops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dvc>=3.67.1",
+    "fastapi>=0.142.2",
+    "mlflow>=3.16.1",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+credit-score-mlops = "credit_score_mlops:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
